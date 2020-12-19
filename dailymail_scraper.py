@@ -12,3 +12,8 @@ print(headline)
 
 summary = article.p.text
 print(summary)
+
+video_source = soup.find('button')['data-url']
+video_url = video_source.split('?u=')[1]
+video_url_true = video_url.split('%3')[0]
+print(video_url_true)
