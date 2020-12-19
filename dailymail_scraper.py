@@ -9,3 +9,6 @@ article = soup.find('div', class_='article-tri-headline')
 
 headline = article.h2.a.text 
 print(headline)
+
+summary = article.p.text
+print(summary)
